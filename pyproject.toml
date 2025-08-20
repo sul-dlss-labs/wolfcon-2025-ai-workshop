@@ -1,0 +1,7 @@
+[project]
+name = "wolfcon-2025-ai-preconference"
+version = "0.1.0"
+description = "Website for WOLFcon 02025 AI Pre-conference"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
