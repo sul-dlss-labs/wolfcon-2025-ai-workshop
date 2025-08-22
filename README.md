@@ -14,3 +14,4 @@ LLMs with various applications in FOLIO like Inventory, Invoices, and Circulatio
 - Creating and using FOLIO AI Agents
 - Model Context Protocol (MCP) Server/Client introduction
 - MCP Servers for FOLIO Apps
+
