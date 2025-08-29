@@ -1,0 +1,115 @@
+from puepy import Application, Component, t
+from puepy.core import html
+from puepy.router import Router
+
+
+topics = [
+    {"name": "Workshop Welcome",
+     "subtopics": [
+         {"name": "Welcome", "id": "welcome"},
+         {"name": "Topics Covered", "id": "topics"},
+         {"name": "Workshop Structure", "id": "structure"},
+         {"name": "IChing Exercise", "id": "iching"}
+     ]},
+    {"name": "Introduction to AI and LLMs",
+     "subtopics": [
+         {"name": "Overview of AI", "id": "ai-overview"},
+         {"name": "Neural Nets & Transformers", "id": "nn-transformers"},
+         {"name": "Large Language Models", "id": "llms"},
+         {"name": "Commerical LLMs", "id": "commerical-llms"},
+         {"name": "Open Source LLMs", "id": "open-source-llms"}
+     ]},
+    {"name": "Challenges with using LLMs",
+     "subtopics": [
+         {"name": "Bias and AI", "id": "bias-ai"},
+         {"name": "Creator Attribution & Copyright", "id": "attribution-copyright"},
+         {"name": "Privacy Concerns", "id": "privacy-concerns"},
+         {"name": "Carbon Footprint", "id": "carbon-footprint"},
+         {"name": "Deepfakes & AI Slop", "id": "deepfakes-ai-slop"},
+         {"name": "Hallucinations", "id": "hallucinations"},
+         {"name": "p(doom) & AGI", "id": "pdoom-agi"}
+     ]},
+    {"name": "Prompt Engineering for FOLIO",
+      "subtopics": [
+          {"name": "Overview", "id": "prompt-overview"},
+          {"name": "Zero Shot", "id": "zero-shot"},
+          {"name": "Multi-shot", "id": "mutli-shot"},
+          {"name": "Chain-of-Thought", "id": "cot"},
+          {"name": "Automatically Generated", "id": "auto-generated"},
+          {"name": "Combining Techniques", "id": "combining-techniques"}
+      ]},
+    {"name": "FOLIO AI Agents",
+      "subtopics": [
+          {"name": "AI Agents", "id": "ai-agents"},
+          {"name": "Edge-AI Module", "id": "edge-ai-module"},
+          {"name": "Inventory Agent", "id": "inventory-agent"},
+          {"name": "Invoice Agent", "id": "invoice-agent"},
+          {"name": "Circulation Agent", "id": "circ-agent"}
+      ]},
+    {"name": "Introduction to MCP",
+      "subtopics": [
+          {"name": "What is MCP?", "id": "what-mcp"},
+          {"name": "Clients", "id": "mcp-clients"},
+          {"name": "Servers", "id": "mcp-servers"},
+          {"name": "Examples", "id": "mcp-examples"}
+      ]},
+    {"name": "MCP Client/Servers for FOLIO Apps",
+      "subtopics": [
+          {"name": "Edge-AI as a MCP Server", "id": "edge-ai-mcp-server"},
+          {"name": "Using with Claude Desktop", "id": "using-claude-desktop"},
+          {"name": "Using with Jupyter Notebooks", "id": "using-jupyter-nb"}
+      ]},
+    {"name": "Wrap-up & Sources",
+      "subtopics": [
+          {"name": "Wrap-up & Final Thoughts", "id": "wrap-up-final-thoughts"},
+          {"name": "Sources", "id": "sources"}
+      ]
+    }
+]
+
+
+@t.component()
+class TopicsTree(Component):
+
+    def topic_tree_item(self, topic):
+        with t.wa_tree_item(topic.get("name", "Missing Topic Name")): #! Add expanded attribute if current route
+            for sub_topic in topic.get("subtopics"):
+                t.wa_tree_item(sub_topic.get("name", "Missing subtopic Name"), id=sub_topic.get("id", "Missing subtopic id"))
+
+
+    def populate(self):
+        with t.wa_tree(class_name="tree-with-lines"):
+            for topic in topics:
+                self.topic_tree_item(topic)
+
+
+@t.component()
+class WorkshopHeader(Component):
+
+    def populate(self):
+        with t.div(class_name="wa-flank", style="--flank-size: 8rem"):
+            with t.div(classes=["wa-frame", "wa-border-radius-m"]):
+                t.img(src="imgs/WOLFcon-2025-logo-2.png", style="width: 150px", alt="WOLFcon 2025 Logo")
+            with t.div(class_name="wa-flank:end", style="--content-percentage: 70%"):
+                with t.div(classes=["wa-stack", "wa-gap-xs"]):
+                    t.h1("Using Generative AI with FOLIO")
+                    t.span(html("Jeremy Nelson<br>Stanford University Libraries"))
+
+
+@t.component()
+class AppLayout(Component):
+
+    def populate(self):
+        with t.div(classes="container"):
+            t.workshop_header()
+            t.wa_divider()
+
+            with t.div(classes=["wa-flank", "wa-align-items-start"]):
+                with t.div(class_name="wa-split:column"):
+                    t.topics_tree()
+
+                with t.div():
+                    t.insert_slot()
+
+app = Application()
+app.install_router(Router, link_mode=Router.LINK_MODE_HASH)

@@ -1,5 +1,6 @@
 # WOLFcon 02025 AI Preconference
 
+Presentation live at [https://sul-dlss-labs.github.io/wolfcon-2025-ai-workshop/](https://sul-dlss-labs.github.io/wolfcon-2025-ai-workshop/)
 Submit proposal for 1/2 day pre-conference [proposal](https://cfp.sched.com/speaker/6WCTz8koYs/event),
 deadline is 16 May 02025. Conference is September 22-25 in Kansas City, Missouri.  
 

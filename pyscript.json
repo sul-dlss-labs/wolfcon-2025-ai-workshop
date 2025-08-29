@@ -1,7 +1,15 @@
 {
   "name": "WOLFcon 2025 Using Generative AI with FOLIO",
   "debug": true,
-  "files": {},
+  "files": {
+    "./common.py": "common.py",
+    "./challenges.py": "challenges.py",
+    "./folio_ai_agents.py": "folio_ai_agents.py",
+    "./introduction.py": "introduction.py",
+    "./mcp_intro.py": "mcp_intro.py",
+    "./prompting.py": "prompting.py",
+    "./welcome.py": "welcome.py"
+  },
   "js_modules": {
     "main": {
       "https://cdn.jsdelivr.net/npm/morphdom@2.7.4/+esm": "morphdom"
