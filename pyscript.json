@@ -3,12 +3,43 @@
   "debug": true,
   "files": {
     "./common.py": "common.py",
-    "./challenges.py": "challenges.py",
-    "./folio_ai_agents.py": "folio_ai_agents.py",
-    "./introduction.py": "introduction.py",
-    "./mcp_intro.py": "mcp_intro.py",
-    "./prompting.py": "prompting.py",
-    "./welcome.py": "welcome.py"
+    "./pages.py": "pages.py",
+    "./docs/welcome.md": "./welcome.md",
+    "./docs/topics.md": "./topics.md",
+    "./docs/structure.md": "./structure.md",
+    "./docs/iching.md": "./iching.md",
+    "./docs/ai-overview.md": "./ai-overview.md",
+    "./docs/nn-transformers.md": "./nn-transformers.md",
+    "./docs/llms.md": "./llms.md",
+    "./docs/commercial-llms.md": "./commercial-llms.md",
+    "./docs/open-source-llms.md": "./open-source-llms.md",
+    "./docs/bias-ai.md": "./bias-ai.md",
+    "./docs/attribution-copyright.md": "./attribution-copyright.md",
+    "./docs/privacy-concerns.md": "./privacy-concerns.md",
+    "./docs/carbon-footprint.md": "./carbon-footprint.md",
+    "./docs/deepfakes-ai-slop.md": "./deepfakes-ai-slop.md",
+    "./docs/hallucinations.md": "./hallucinations.md",
+    "./docs/pdoom-agi.md": "./pdoom-agi.md",
+    "./docs/prompt-overview.md": "./prompt-overview.md",
+    "./docs/zero-shot.md": "./zero-shot.md",
+    "./docs/multi-shot.md": "./multi-shot.md",
+    "./docs/cot.md": "./cot.md",
+    "./docs/auto-generated.md": "./auto-generated.md",
+    "./docs/combining-techniques.md": "./combining-techniques.md",
+    "./docs/ai-agents.md": "./ai-agents.md",
+    "./docs/edge-ai-module.md": "./edge-ai-module.md",
+    "./docs/inventory-agent.md": "./inventory-agent.md",
+    "./docs/invoice-agent.md": "./invoice-agent.md",
+    "./docs/circ-agent.md": "./circ-agent.md",
+    "./docs/what-mcp.md": "./what-mcp.md",
+    "./docs/mcp-clients.md": "./mcp-clients.md",
+    "./docs/mcp-servers.md": "./mcp-servers.md",
+    "./docs/mcp-examples.md": "./mcp-examples.md",
+    "./docs/edge-ai-mcp-server.md": "./edge-ai-mcp-server.md",
+    "./docs/using-claude-desktop.md": "./using-claude-desktop.md",
+    "./docs/using-jupyter-nb.md": "./using-jupyter-nb.md",
+    "./docs/wrap-up-final-thoughts.md": "./wrap-up-final-thoughts.md",
+    "./docs/sources.md": "./sources.md"
   },
   "js_modules": {
     "main": {
@@ -16,6 +47,7 @@
     }
   },
   "packages": [
+    "markdown",
     "./wheels/puepy-0.6.5-py3-none-any.whl"
   ]
 }
