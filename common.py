@@ -5,7 +5,7 @@ from puepy.router import Router
 
 topics = [
     {"name": "Workshop Welcome",
-     "path": "",
+     "path": "welcome",
      "subtopics": [
          {"name": "Welcome", "id": "welcome"},
          {"name": "Topics Covered", "id": "topics"},
@@ -52,6 +52,7 @@ topics = [
           {"name": "Circulation Agent", "id": "circ-agent"}
       ]},
     {"name": "Introduction to MCP",
+      "path": "mcp-introduction",
       "subtopics": [
           {"name": "What is MCP?", "id": "what-mcp"},
           {"name": "Clients", "id": "mcp-clients"},
@@ -59,12 +60,14 @@ topics = [
           {"name": "Examples", "id": "mcp-examples"}
       ]},
     {"name": "MCP Client/Servers for FOLIO Apps",
+      "path": "folio-mcp-client-servers",
       "subtopics": [
           {"name": "Edge-AI as a MCP Server", "id": "edge-ai-mcp-server"},
           {"name": "Using with Claude Desktop", "id": "using-claude-desktop"},
           {"name": "Using with Jupyter Notebooks", "id": "using-jupyter-nb"}
       ]},
     {"name": "Wrap-up & Sources",
+      "path": "wrap-up-sources",
       "subtopics": [
           {"name": "Wrap-up & Final Thoughts", "id": "wrap-up-final-thoughts"},
           {"name": "Sources", "id": "sources"}
@@ -82,7 +85,7 @@ class TopicsTree(Component):
             for sub_topic in topic.get("subtopics"):
                 t.wa_tree_item(
                   t.a(sub_topic.get("name", "Missing subtopic Name"), 
-                      href=f"#{topic_path}")
+                      href=f"#topics/{topic_path}")
                 )
 
 
