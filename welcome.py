@@ -7,7 +7,7 @@ class WolfconPage(Page):
     def iching_tab(self):
         with t.wa_tab_panel(name="iching"):
             with t.div():
-                t.h2("I-Ching Exercise")
+                t.h3("I-Ching Exercise")
 
     def sub_topics_tabs(self):
         with t.wa_tab_group(placement="bottom"):
@@ -29,6 +29,7 @@ class WolfconPage(Page):
                 t.topics_tree()
 
             with t.div():
+                t.h2("Welcome to the Using Generative AI in FOLIO Workshop")
                 self.sub_topics_tabs()
      
         with t.wa_dialog(label="About", id="about-dialog"):
@@ -40,19 +41,19 @@ class WolfconPage(Page):
     def welcome_tab(self):
         with t.wa_tab_panel(name="welcome"):
             with t.div():
-                t.h2("Welcome to the Using Generative AI in FOLIO Workshop")
+                t.h3("Welcome!")
                 t.div("This 1/2 day workshop will cover using Generative AI within FOLIO.")
 
     def workshop_structure_tab(self):
         with t.wa_tab_panel(name="structure"):
             with t.div():
-                t.h2("Structure of the Workshop")
+                t.h3("Structure of the Workshop")
                 t.div("We will cover topics 1-2 first, than a ten minute break, followed by topics 3-4, then another break, and finishing with the final topics")
 
     def workshop_topics_tab(self):
         with t.wa_tab_panel(name="topics"):
             with t.div():
-                t.h2("Topics covered in this Workshop")
+                t.h3("Topics covered in this Workshop")
                 with t.ul():
                     for topic in topics:
                         t.li(topic.get('name'))

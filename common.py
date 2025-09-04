@@ -5,6 +5,7 @@ from puepy.router import Router
 
 topics = [
     {"name": "Workshop Welcome",
+     "path": "",
      "subtopics": [
          {"name": "Welcome", "id": "welcome"},
          {"name": "Topics Covered", "id": "topics"},
@@ -12,14 +13,16 @@ topics = [
          {"name": "IChing Exercise", "id": "iching"}
      ]},
     {"name": "Introduction to AI and LLMs",
+     "path": "intro-llms-ai",
      "subtopics": [
          {"name": "Overview of AI", "id": "ai-overview"},
          {"name": "Neural Nets & Transformers", "id": "nn-transformers"},
          {"name": "Large Language Models", "id": "llms"},
-         {"name": "Commerical LLMs", "id": "commerical-llms"},
+         {"name": "Commercial LLMs", "id": "commercial-llms"},
          {"name": "Open Source LLMs", "id": "open-source-llms"}
      ]},
     {"name": "Challenges with using LLMs",
+     "path": "challenges",
      "subtopics": [
          {"name": "Bias and AI", "id": "bias-ai"},
          {"name": "Creator Attribution & Copyright", "id": "attribution-copyright"},
@@ -30,15 +33,17 @@ topics = [
          {"name": "p(doom) & AGI", "id": "pdoom-agi"}
      ]},
     {"name": "Prompt Engineering for FOLIO",
+      "path": "prompt-engineering",
       "subtopics": [
           {"name": "Overview", "id": "prompt-overview"},
           {"name": "Zero Shot", "id": "zero-shot"},
-          {"name": "Multi-shot", "id": "mutli-shot"},
+          {"name": "Multi-shot", "id": "multi-shot"},
           {"name": "Chain-of-Thought", "id": "cot"},
           {"name": "Automatically Generated", "id": "auto-generated"},
           {"name": "Combining Techniques", "id": "combining-techniques"}
       ]},
     {"name": "FOLIO AI Agents",
+      "path": "folio-ai-agents",
       "subtopics": [
           {"name": "AI Agents", "id": "ai-agents"},
           {"name": "Edge-AI Module", "id": "edge-ai-module"},
@@ -72,9 +77,13 @@ topics = [
 class TopicsTree(Component):
 
     def topic_tree_item(self, topic):
+        topic_path = topic.get("path", "")
         with t.wa_tree_item(topic.get("name", "Missing Topic Name")): #! Add expanded attribute if current route
             for sub_topic in topic.get("subtopics"):
-                t.wa_tree_item(sub_topic.get("name", "Missing subtopic Name"), id=sub_topic.get("id", "Missing subtopic id"))
+                t.wa_tree_item(
+                  t.a(sub_topic.get("name", "Missing subtopic Name"), 
+                      href=f"#{topic_path}")
+                )
 
 
     def populate(self):
