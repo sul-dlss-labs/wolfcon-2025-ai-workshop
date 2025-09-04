@@ -33,6 +33,7 @@ class TopicPage(Page):
                             subtopic_path = home / f"{sub_topic['id']}.md"
                             raw_html = markdown.markdown(subtopic_path.read_text(), extensions=['extra'])
                             t(html(raw_html))
+        t.workshop_footer()
 
 
 

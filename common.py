@@ -109,19 +109,12 @@ class WorkshopHeader(Component):
 
 
 @t.component()
-class AppLayout(Component):
+class WorkshopFooter(Component):
 
     def populate(self):
         with t.div(classes="container"):
-            t.workshop_header()
             t.wa_divider()
-
-            with t.div(classes=["wa-flank", "wa-align-items-start"]):
-                with t.div(class_name="wa-split:column"):
-                    t.topics_tree()
-
-                with t.div():
-                    t.insert_slot()
+            t.p("The content and source code for this website is licensed under CC0 and the Apache2 license respectively.")           
 
 app = Application()
 app.install_router(Router, link_mode=Router.LINK_MODE_HASH)
