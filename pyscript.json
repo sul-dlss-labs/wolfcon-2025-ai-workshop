@@ -24,6 +24,7 @@
     "./docs/zero-shot.md": "./zero-shot.md",
     "./docs/multi-shot.md": "./multi-shot.md",
     "./docs/cot.md": "./cot.md",
+    "./docs/rag.md": "./rag.md",
     "./docs/auto-generated.md": "./auto-generated.md",
     "./docs/combining-techniques.md": "./combining-techniques.md",
     "./docs/ai-agents.md": "./ai-agents.md",

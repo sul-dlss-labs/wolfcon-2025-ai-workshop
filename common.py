@@ -40,6 +40,7 @@ topics = [
           {"name": "Multi-shot", "id": "multi-shot"},
           {"name": "Chain-of-Thought", "id": "cot"},
           {"name": "Automatically Generated", "id": "auto-generated"},
+          {"name": "Using with RAG", "id": "rag" },
           {"name": "Combining Techniques", "id": "combining-techniques"}
       ]},
     {"name": "FOLIO AI Agents",
