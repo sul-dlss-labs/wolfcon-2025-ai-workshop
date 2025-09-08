@@ -1,3 +1,5 @@
+from js import console
+
 from puepy import Application, Component, t
 from puepy.core import html
 from puepy.router import Router
@@ -80,12 +82,14 @@ topics = [
 @t.component()
 class TopicsTree(Component):
 
+
     def topic_tree_item(self, topic):
         topic_path = topic.get("path", "")
         with t.wa_tree_item(topic.get("name", "Missing Topic Name")): #! Add expanded attribute if current route
             for sub_topic in topic.get("subtopics"):
                 t.wa_tree_item(
-                  t.a(sub_topic.get("name", "Missing subtopic Name"), 
+                  t.a(sub_topic.get("name", "Missing subtopic Name"),
+                      on_click=self.show_subtopic, 
                       href=f"#topics/{topic_path}")
                 )
 
@@ -94,6 +98,9 @@ class TopicsTree(Component):
         with t.wa_tree(class_name="tree-with-lines"):
             for topic in topics:
                 self.topic_tree_item(topic)
+
+    def show_subtopic(self, event):
+        console.log(f"Active subtopic {event.target}")
 
 
 @t.component()
