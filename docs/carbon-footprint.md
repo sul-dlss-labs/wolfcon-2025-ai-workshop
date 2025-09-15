@@ -46,6 +46,7 @@ and users of these LLMs to reduce the environmental impact of these models. Thes
 #### Resources
 - [Assessing the environmental impact of large language models](https://www.techtarget.com/searchenterpriseai/tip/Assessing-the-environmental-impact-of-large-language-models)
 - [LLMCarbon: Modeling the end-to-end Carbon Footprint of Large Language Models](https://arxiv.org/abs/2309.14393)
+- [Research on carbon footprint in the whole process of LLM based on refined modeling](https://dl.acm.org/doi/10.1145/3701100.3701162)
 
 
 [^AI_CHATBOTS_2023]: [AI Chatbots: Energy usage of 2023’s most popular chatbots (so far)](https://www.trgdatacenters.com/resource/ai-chatbots-energy-usage-of-2023s-most-popular-chatbots-so-far/)

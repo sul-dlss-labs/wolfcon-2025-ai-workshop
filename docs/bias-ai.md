@@ -69,6 +69,7 @@ See how the LLM vendors respond and attempt to mitigate bias in their models:
 [^GEMINI]: [Gemini for Google Cloud and responsible AI](https://cloud.google.com/gemini/docs/discover/responsible-ai)
 
 #### Resources 
+- [To explore AI bias, researchers pose a question: How do you imagine a tree?](https://news.stanford.edu/stories/2025/07/ai-llm-ontological-systems-bias-research)
 - [There’s More to AI Bias Than Biased Data, NIST Report Highlights](https://www.nist.gov/news-events/news/2022/03/theres-more-ai-bias-biased-data-nist-report-highlights)
 - [Managing Bias in AI](https://lin-web.clarkson.edu/~jmatthew/publications/ManagingBiasInAI_CAMERAREADY.pdf) 
 

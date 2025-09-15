@@ -14,5 +14,5 @@ different AI applications with different data sources and systems:
 ![MCP Diagram](imgs/mcp-simple-diagram.png)
 
 MCP has an inner **Data layer** that defines the JSON-RPC protocol for
-client-server communication and an outer **Tranport layer** that defines
+client-server communication and an outer **Transport layer** that defines
 the data exchange between the client and servers.

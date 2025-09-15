@@ -29,8 +29,15 @@ these models.
 #### Re-identification
 Even when personal information in LLMs is anonymized, it can be vulnerable to re-identification. By 
 analyzing LLMs responses, individuals could potential be identified thereby comprising their privacy
-when interacting with theses AI systems. 
+when interacting with theses AI systems.
+
+#### Privacy with AI Agents
+AI Agents using generative AI pose additional privacy concerns, especially when used with other 
+systems.[^PRIVACY_PARADOX] Techniques such as sensitive information filtering, homomorphic encryption of users 
+private data, session isolation, and response filtering.[^PROTECT_DATA_PRIVACY]  
 
 [^PRIVACY_LLM]: [Privacy in Large Language Models: Attacks, Defenses and Future Directions](https://arxiv.org/abs/2310.10383)
 [^SCALEABLE]: [Scalable Extraction of Training Data from (Production) Language Models](https://arxiv.org/abs/2311.17035)
 [^GEN_AI_PRIVACY]: [Generative AI's privacy problem](https://www.axios.com/2024/03/14/generative-ai-privacy-problem-chatgpt-openai)
+[^PROTECT_DATA_PRIVACY]: [On protecting the data privacy of Large Language Models (LLMs) and LLM agents: A literature review](https://doi.org/10.1016/j.hcc.2025.100300)
+[^PRIVACY_PARADOX]: [SoK: The Privacy Paradox of Large Language Models: Advancements, Privacy Risks, and Mitigation](https://dl.acm.org/doi/10.1145/3708821.3733888)
