@@ -81,17 +81,30 @@ topics = [
 
 @t.component()
 class TopicsTree(Component):
-
+    redraw_on_changes = True
+    props = ["current_topic_path"]
 
     def topic_tree_item(self, topic):
         topic_path = topic.get("path", "")
-        with t.wa_tree_item(topic.get("name", "Missing Topic Name")): #! Add expanded attribute if current route
+        
+        is_current_topic = (self.current_topic_path == topic_path)
+
+        with t.wa_tree_item(topic.get("name", "Missing Topic Name"), expanded=is_current_topic): 
             for sub_topic in topic.get("subtopics"):
-                t.wa_tree_item(
-                  t.a(sub_topic.get("name", "Missing subtopic Name"),
-                      on_click=self.show_subtopic, 
-                      href=f"#topics/{topic_path}")
-                )
+                sub_id = sub_topic.get("id")
+                is_active = self.application.state.get("active-topic") == sub_id
+                if is_active:
+                    tree_item = t.wa_tree_item(
+                      sub_topic.get("name"),
+                      selected=True
+                    )
+                else:
+                    t.wa_tree_item(
+                        t.a(sub_topic.get("name", "Missing subtopic Name"),
+                            on_click=self.show_subtopic,
+                            data_subtopic_id=sub_topic.get("id"), 
+                            href=f"#topics/{topic_path}")
+                    )
 
 
     def populate(self):
@@ -100,8 +113,10 @@ class TopicsTree(Component):
                 self.topic_tree_item(topic)
 
     def show_subtopic(self, event):
-        console.log(f"Active subtopic {event.target}")
-
+        sub_id = event.currentTarget.getAttribute("data-subtopic-id")
+        if sub_id:
+            self.application.state["active-topic"] = sub_id
+            self.redraw()
 
 @t.component()
 class WorkshopHeader(Component):
