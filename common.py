@@ -41,7 +41,6 @@ topics = [
           {"name": "Zero Shot", "id": "zero-shot"},
           {"name": "Multi-shot", "id": "multi-shot"},
           {"name": "Chain-of-Thought", "id": "cot"},
-          {"name": "Automatically Generated", "id": "auto-generated"},
           {"name": "Using with RAG", "id": "rag" },
           {"name": "Combining Techniques", "id": "combining-techniques"}
       ]},
@@ -52,7 +51,6 @@ topics = [
           {"name": "Edge-AI Module", "id": "edge-ai-module"},
           {"name": "Inventory Agent", "id": "inventory-agent"},
           {"name": "Invoice Agent", "id": "invoice-agent"},
-          {"name": "Circulation Agent", "id": "circ-agent"}
       ]},
     {"name": "Introduction to MCP",
       "path": "mcp-introduction",

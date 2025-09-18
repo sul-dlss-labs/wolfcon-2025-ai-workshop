@@ -10,6 +10,19 @@ Beyond its use as a divination tool, the I-Ching is also a Taoist philosophical 
 The I-Ching widget on this page give a random fortune generator based on the coin-flipping 
 method.
 
+<div class="wa-border-radius-m">
+  <h3 slot="header">Your I-Ching Fortune</h3>
+  <strong>Enter your question</strong>
+  <textarea id="question" rows="3"></textarea>
+  <button py-click="tell_fortune" type="button">Ask the Oracle</button>
+</div>
+<div id="fortune" style="visibility: hidden;">
+  <p id="hexagram-character" style="font-size: 5rem;"></p>
+  <p id="hexagram-name"></p>
+  <p id="question-repeat"></p>
+  <button py-click="copy_fortune">&#x2398;</button>
+</div>
+
 #### Suggested Prompts
 - Please generate my I-Ching fortune and the resulting interpretation for this query:
   How can I best take advantage of the presentations and networking for WOLFcon 2025 in Kansas City? 

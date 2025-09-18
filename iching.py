@@ -17,7 +17,7 @@ YIN, YANG = 2,3
 
 PATTERNS = dict()
 
-HEXAGRAM_PATH = pathlib.Path("./intro-pre-conference/iching.json")
+HEXAGRAM_PATH = pathlib.Path("iching.json")
 
 with HEXAGRAM_PATH.open() as fo:
     PATTERNS = json.load(fo)
@@ -94,7 +94,7 @@ class Oracle:
 def tell_fortune(event):
     question = document.querySelector("#question")
     fortune_elem = document.querySelector("#fortune")
-    fortune_elem.classList.remove("invisible")
+    fortune_elem.setAttribute("style","border: 1px;padding: 5px;")
     hexagram_char = document.querySelector("#hexagram-character")
     hexagram_name = document.querySelector("#hexagram-name")
     small_question = document.querySelector("#question-repeat")

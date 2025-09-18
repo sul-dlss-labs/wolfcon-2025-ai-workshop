@@ -1,0 +1,20 @@
+# Final Week Checklist
+- [x] Finish iChing
+- [ ] Finish LLM and Multimodal Models Topic
+- [ ] Updates for Challenges
+  - [x] Bias and Ai
+  - [x] Creator Attribution
+  - [x] Privacy Concerns
+  - [x] Carbon Footprint
+  - [ ] Deepfakes and AI Slop
+  - [ ] Hallucinations
+  - [ ] p(doom) and AGI
+- [ ] Finish Combining Techniques
+- [x] Finish/test Invoice Agent
+- [x] Remove Circ Agent topic
+- [ ] Finish MCP Examples
+- [ ] Finish Edge-AI as MCP Server
+- [ ] Finish Using w/Claude Desktop
+- [ ] Finish Using w/Jupyter Notebook
+- [ ] Finish Wrap-up & Final Thoughts
+- [ ] Finish Sources
