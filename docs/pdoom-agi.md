@@ -1,4 +1,7 @@
 ### p(doom) and Artificial General Intelligence (AGI)
+
+![Cover with authors of If Anyone Builds it, Everyone Dies](imgs/book-cover-if-anyone-builds-it-everyone-dies.jpg)
+
 What is the probability of AI taking over or even causing the complete destruction of 
 civilization? This question has become a popular topic with the rapid development of generative
 AI in recent years[^FAST]. Known as p(doom), or the probability of an AI

@@ -13,6 +13,7 @@
 - [On protecting the data privacy of Large Language Models (LLMs) and LLM agents: A literature review](https://doi.org/10.1016/j.hcc.2025.100300)
 - [Privacy in Large Language Models: Attacks, Defenses and Future Directions](https://arxiv.org/abs/2310.10383)
 -  [Reducing the Environmental Impact of Generative AI: a Guide for Practitioners](https://techcommunity.microsoft.com/t5/azure-architecture-blog/reducing-the-environmental-impact-of-generative-ai-a-guide-for/)
+- [Remarks on AI from NZ](https://nealstephenson.substack.com/p/remarks-on-ai-from-nz)
 - [Research on carbon footprint in the whole process of LLM based on refined modeling](https://dl.acm.org/doi/10.1145/3701100.3701162)
 - [SoK: The Privacy Paradox of Large Language Models: Advancements, Privacy Risks, and Mitigation](https://dl.acm.org/doi/10.1145/3708821.3733888)
 - [There’s More to AI Bias Than Biased Data, NIST Report Highlights](https://www.nist.gov/news-events/news/2022/03/theres-more-ai-bias-biased-data-nist-report-highlights)

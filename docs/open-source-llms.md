@@ -29,9 +29,11 @@ equaled or surpassed the state-of-art models by OpenAPI, Antrophic, and Google.
 
 
 ### OpenAI Open Source Models
-On August 5, 2025 OpenAI released tow of their models, [gpt-oss-120b]() and [gpt-oss-20b]()
+On August 5, 2025 OpenAI released two of their models, [gpt-oss-120b]() and [gpt-oss-20b]()
 
-
+### Alibaba Qwen3
+[Alibaba](https://www.alibaba.com/) has released a family of [Qwen3](https://github.com/QwenLM/Qwen3) 
+open-source models.
 
 ### Using gpt4all 
 If you haven't already prior to this workshop (and if you have

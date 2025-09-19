@@ -19,7 +19,7 @@ topics = [
      "subtopics": [
          {"name": "Overview of AI", "id": "ai-overview"},
          {"name": "Neural Nets & Transformers", "id": "nn-transformers"},
-         {"name": "Large Language Models", "id": "llms"},
+         {"name": "LLMs and MLLMs", "id": "llms"},
          {"name": "Commercial LLMs", "id": "commercial-llms"},
          {"name": "Open Source LLMs", "id": "open-source-llms"}
     ]},
