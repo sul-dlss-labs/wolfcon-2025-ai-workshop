@@ -1,4 +1,4 @@
-### I-Ching Exercises
+### I-Ching Exercise
 The I-Ching[^WIKI] is a historical method divination that originated in China. It involves
 randomly selecting a hexagram from sixty-four hexagrams that suggest responses
 and course of actions based on a textual prompt. Each hexagram is made up of 6 horizontal
@@ -10,17 +10,17 @@ Beyond its use as a divination tool, the I-Ching is also a Taoist philosophical 
 The I-Ching widget on this page give a random fortune generator based on the coin-flipping 
 method.
 
-<div class="wa-border-radius-m">
+<div class="iching-widget">
   <h3 slot="header">Your I-Ching Fortune</h3>
   <strong>Enter your question</strong>
   <textarea id="question" rows="3"></textarea>
   <button py-click="tell_fortune" type="button">Ask the Oracle</button>
-</div>
-<div id="fortune" style="visibility: hidden;">
-  <p id="hexagram-character" style="font-size: 5rem;"></p>
-  <p id="hexagram-name"></p>
-  <p id="question-repeat"></p>
-  <button py-click="copy_fortune">&#x2398;</button>
+  <div id="fortune" style="visibility: hidden;">
+   <p id="hexagram-character" style="font-size: 5rem;"></p>
+   <p id="hexagram-name"></p>
+   <p id="question-repeat"></p>
+   <button py-click="copy_fortune">Copy &#x2398;</button>
+ </div>
 </div>
 
 #### Suggested Prompts

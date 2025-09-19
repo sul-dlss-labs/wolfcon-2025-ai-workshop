@@ -22,7 +22,17 @@ topics = [
          {"name": "Large Language Models", "id": "llms"},
          {"name": "Commercial LLMs", "id": "commercial-llms"},
          {"name": "Open Source LLMs", "id": "open-source-llms"}
-     ]},
+    ]},
+    {"name": "Prompt Engineering for FOLIO",
+      "path": "prompt-engineering",
+      "subtopics": [
+          {"name": "Overview", "id": "prompt-overview"},
+          {"name": "Zero Shot", "id": "zero-shot"},
+          {"name": "Multi-shot", "id": "multi-shot"},
+          {"name": "Chain-of-Thought", "id": "cot"},
+          {"name": "Using with RAG", "id": "rag" },
+          {"name": "Combining Techniques", "id": "combining-techniques"}
+      ]},
     {"name": "Challenges with using LLMs",
      "path": "challenges",
      "subtopics": [
@@ -34,16 +44,6 @@ topics = [
          {"name": "Hallucinations", "id": "hallucinations"},
          {"name": "p(doom) & AGI", "id": "pdoom-agi"}
      ]},
-    {"name": "Prompt Engineering for FOLIO",
-      "path": "prompt-engineering",
-      "subtopics": [
-          {"name": "Overview", "id": "prompt-overview"},
-          {"name": "Zero Shot", "id": "zero-shot"},
-          {"name": "Multi-shot", "id": "multi-shot"},
-          {"name": "Chain-of-Thought", "id": "cot"},
-          {"name": "Using with RAG", "id": "rag" },
-          {"name": "Combining Techniques", "id": "combining-techniques"}
-      ]},
     {"name": "FOLIO AI Agents",
       "path": "folio-ai-agents",
       "subtopics": [
