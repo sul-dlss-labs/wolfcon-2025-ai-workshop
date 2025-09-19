@@ -27,6 +27,7 @@ It currently avoids generating images of people due to earlier issues[^GEMINI_PE
 figures appearing with incorrect racial or gender characteristics.
 
 Here is an example of Gemini's image generation from the prompt above:
+
 ![Gemeni Robot in a Moon Library](imgs/gemini-robot-in-a-moon-library.png)
 
 #### Midjourney

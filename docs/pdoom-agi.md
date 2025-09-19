@@ -20,6 +20,13 @@ across a wide range cognitive tasks. A significant concern associated with AGI i
 this threshold, it could rapidly improve itself, becoming an intelligence far beyond anything 
 humans can currently comprehend.
 
+The website [AI 2027](https://ai-2027.com/) presents a scenario based on current trends in 
+Generative AI where we reach superhuman AI and offers a critical decision point where AI races
+ahead, creates a bio-superweapon that kills all humans, and starts expansion into the universe.
+In the second path, a committee takes over that is able align AI and a new golden era of human/AI
+begins. 
+
+
 #### AI Alignment
 Minimizing p(doom) through aligning AGI's goals with our own goals and values is an active area
 of research in both academic and by AI companies and should be included in any broad analysis of
