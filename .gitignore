@@ -10,3 +10,6 @@ dist/
 
 # Editors - VIM etc.
 *swp 
+
+# Localy .env file
+.env

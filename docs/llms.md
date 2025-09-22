@@ -57,6 +57,7 @@ reaches up and opens a book with a title, "AI in FOLIO"*, Dream Machine generate
  Your browser does not support the video tag
 </video>
 
+[^GEMINI_PEOPLE]: [Why Google’s AI tool was slammed for showing images of people of colour](https://www.aljazeera.com/news/2024/3/9/why-google-gemini-wont-show-you-white-people)
 [^WHAT_MLLM]: [What is a multimodal LLM (MLLM)?](https://www.ibm.com/think/topics/multimodal-llm)
 [GEMINI]: https://gemini.google.com/
 [OPENAI]: https://openai.com/
