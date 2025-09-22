@@ -37,6 +37,13 @@ provided an example of a superintelligent AI that has an initial goal to maximiz
 manufacturing. Such an AI could potentially ignore any human values, and in a worst-case scenario,
 converting the entire planet into paperclip manufacturing, to the detriment of all life on Earth.
 
+#### p(doom) Survey 
+- Please raise your hand if your personal p(doom) score is:
+    1. 0-25%
+    2. 25-50%
+    3. 50-75%
+    4. 75-90%
+    5. We are doomed 90%+
  
 ## Footnotes
 [^FAST]: [P(doom) is AI’s latest apocalypse metric. Here’s how to calculate your score](https://www.fastcompany.com/90994526/pdoom-explained-how-to-calculate-your-score-on-ai-apocalypse-metric)

@@ -35,12 +35,6 @@ On August 5, 2025 OpenAI released two of their models, [gpt-oss-120b]() and [gpt
 [Alibaba](https://www.alibaba.com/) has released a family of [Qwen3](https://github.com/QwenLM/Qwen3) 
 open-source models.
 
-### Using gpt4all 
-If you haven't already prior to this workshop (and if you have
-administrative rights on your local laptop), please download and install [gpt4all][GPT4ALL].
-
-A nice feature of [gpt4all][GPT4ALL], is that you can use a locally running LLM without an internet connection. 
-This also means that you can restrict access when using RAG on sensitive or private documentation.
 
 ### Using Llama.cpp
 The [LLaMA.cpp][LLAMA.CCP] project allows you to run fine-tuned

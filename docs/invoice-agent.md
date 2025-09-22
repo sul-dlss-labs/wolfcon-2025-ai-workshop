@@ -3,6 +3,8 @@ Currently being developed, the [Invoice Agent]() allows a user to upload a PDF t
 [Edge-AI][EDGE_AI] API and then generates an Invoice record based on the extracted
 information from the PDF. 
 
+#### Jupyter Notebook
+- See the [FinanceInvoiceAgent.ipynb](FinanceInvoiceAgent.ipynb) notebook
 
 [EDGE_AI]: https://github.com/folio-labs/edge-ai
  

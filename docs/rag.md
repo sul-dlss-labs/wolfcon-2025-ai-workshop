@@ -30,4 +30,7 @@ AI workflows; both in the generative aspects of creating new documents
 like invoices or inventory records from text or automatic prompts, and
 minimize errors in the LLMs output.
 
+#### FOLIO Organization RAG
+- See the [OrgsVectorDB.ipynb](http://localhost:8888/notebooks/OrgsVectorDB.ipynb) notebook
+
 [^RAG_NLP]: [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) 
