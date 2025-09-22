@@ -64,8 +64,7 @@ topics = [
       "path": "folio-mcp-client-servers",
       "subtopics": [
           {"name": "Edge-AI as a MCP Server", "id": "edge-ai-mcp-server"},
-          {"name": "Using with Claude Desktop", "id": "using-claude-desktop"},
-          {"name": "Using with Jupyter Notebooks", "id": "using-jupyter-nb"}
+          {"name": "Using with Claude Desktop", "id": "using-claude-desktop"}
       ]},
     {"name": "Wrap-up & Sources",
       "path": "wrap-up-sources",
